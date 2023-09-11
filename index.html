@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Decision Making App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Decision Maker</h1>
+      <div class="stage" id="stage1">
+        <h2>Your name, please?</h2>
+        <input type="text" id="userName" placeholder="Type Your Name" />
+        <button id="enterName">Enter</button>
+      </div>
+      <div class="stage" id="stage2">
+        <h2 id="welcome"></h2>
+        <h2 id="welcomeMessage">How may I help you today?</h2>
+        <h2 id="errorMessage">To move forward, you must ask a question!</h2>
+        <input type="text" id="question" placeholder="Type your question" />
+        <button id="askButton">Ask Me</button>
+      </div>
+      <div class="stage" id="stage3">
+        <h2 id="askedQuestion"></h2>
+        <h2 id="result"></h2>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

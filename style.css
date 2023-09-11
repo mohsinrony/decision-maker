@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(to bottom right, #FFD700, #FFA500);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 0.20em solid #f1835b;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(231, 126, 6, 0.774);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+
+h2 {
+  font-size: 2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: beige;
+  border-radius: 5px;
+  font-size: 1.5em;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background-color 0.3s;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+ 
+}
+
+
+/* Gradient Button */
+button {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #FFA500, #FF6347);
+}
+
+#result {
+  font-size: 2em; 
+  font-weight: bold; 
+  color: #f49931; 
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+
+#errorMessage {
+  color: red;
+  display: none;
+}
+
+
+.stage {
+  display: none;
+}
+
+
+#stage1 {
+  display: block;
+}
+
+
+#stage2,
+#stage3 {
+  display: none;
+}
